@@ -1,0 +1,828 @@
+{
+	"version" : 1,
+	"locale" : "ko_KO",
+	"platform" : "3.3.2",
+	"metadata" : {
+		"appmode" : "shiny",
+		"primary_rmd" : null,
+		"primary_html" : null,
+		"content_category" : null,
+		"has_parameters" : false
+	},
+	"packages" : {
+		"R6" : {
+			"Source" : "CRAN",
+			"Repository" : "https://cran.rstudio.com/",
+			"description" : {
+				"Package" : "R6",
+				"Title" : "Classes with Reference Semantics",
+				"Version" : "2.2.0",
+				"Authors@R" : "person(\"Winston\", \"Chang\", role = c(\"aut\", \"cre\"), email = \"winston@stdout.org\")",
+				"Description" : "The R6 package allows the creation of classes with reference\n    semantics, similar to R's built-in reference classes. Compared to reference\n    classes, R6 classes are simpler and lighter-weight, and they are not built\n    on S4 classes so they do not require the methods package. These classes\n    allow public and private members, and they support inheritance, even when\n    the classes are defined in different packages.",
+				"Depends" : "R (>= 3.0)",
+				"Suggests" : "knitr, microbenchmark, pryr, testthat, ggplot2, scales",
+				"License" : "MIT + file LICENSE",
+				"URL" : "https://github.com/wch/R6/",
+				"LazyData" : "true",
+				"VignetteBuilder" : "knitr",
+				"RoxygenNote" : "5.0.1",
+				"NeedsCompilation" : "no",
+				"Packaged" : "2016-10-03 20:49:50 UTC; winston",
+				"Author" : "Winston Chang [aut, cre]",
+				"Maintainer" : "Winston Chang <winston@stdout.org>",
+				"Repository" : "CRAN",
+				"Date/Publication" : "2016-10-05 09:29:43",
+				"Built" : "R 3.3.3; ; 2017-04-14 01:02:59 UTC; windows"
+			}
+		},
+		"Rcpp" : {
+			"Source" : "CRAN",
+			"Repository" : "https://cran.rstudio.com/",
+			"description" : {
+				"Package" : "Rcpp",
+				"Title" : "Seamless R and C++ Integration",
+				"Version" : "0.12.10",
+				"Date" : "2017-03-17",
+				"Author" : "Dirk Eddelbuettel, Romain Francois, JJ Allaire, Kevin Ushey, Qiang Kou,\n Nathan Russell, Douglas Bates and John Chambers",
+				"Maintainer" : "Dirk Eddelbuettel <edd@debian.org>",
+				"Description" : "The 'Rcpp' package provides R functions as well as C++ classes which\n offer a seamless integration of R and C++. Many R data types and objects can be\n mapped back and forth to C++ equivalents which facilitates both writing of new\n code as well as easier integration of third-party libraries. Documentation \n about 'Rcpp' is provided by several vignettes included in this package, via the \n 'Rcpp Gallery' site at <http://gallery.rcpp.org>, the paper by Eddelbuettel and \n Francois (2011, JSS), and the book by Eddelbuettel (2013, Springer); see \n 'citation(\"Rcpp\")' for details on these last two.",
+				"Depends" : "R (>= 3.0.0)",
+				"Imports" : "methods, utils",
+				"Suggests" : "RUnit, inline, rbenchmark, highlight, pkgKitten (>= 0.1.2)",
+				"VignetteBuilder" : "highlight",
+				"URL" : "http://www.rcpp.org, http://dirk.eddelbuettel.com/code/rcpp.html,\nhttps://github.com/RcppCore/Rcpp",
+				"License" : "GPL (>= 2)",
+				"BugReports" : "https://github.com/RcppCore/Rcpp/issues",
+				"MailingList" : "Please send questions and comments regarding Rcpp to\nrcpp-devel@lists.r-forge.r-project.org",
+				"RoxygenNote" : "5.0.1",
+				"NeedsCompilation" : "yes",
+				"Packaged" : "2017-03-17 12:32:02.116916 UTC; edd",
+				"Repository" : "CRAN",
+				"Date/Publication" : "2017-03-19 12:33:00 UTC",
+				"Built" : "R 3.3.3; x86_64-w64-mingw32; 2017-04-14 01:03:11 UTC; windows"
+			}
+		},
+		"digest" : {
+			"Source" : "CRAN",
+			"Repository" : "https://cran.rstudio.com/",
+			"description" : {
+				"Package" : "digest",
+				"Author" : "Dirk Eddelbuettel <edd@debian.org> with contributions \n by Antoine Lucas, Jarek Tuszynski, Henrik Bengtsson, Simon Urbanek,\n Mario Frasca, Bryan Lewis, Murray Stokely, Hannes Muehleisen,\n Duncan Murdoch, Jim Hester, Wush Wu, Qiang Kou, Thierry Onkelinx, \n Michel Lang and Viliam Simko.",
+				"Version" : "0.6.12",
+				"Date" : "2017-01-26",
+				"Maintainer" : "Dirk Eddelbuettel <edd@debian.org>",
+				"Title" : "Create Compact Hash Digests of R Objects",
+				"Description" : "Implementation of a function 'digest()' for the creation \n of hash digests of arbitrary R objects (using the 'md5', 'sha-1', 'sha-256', \n 'crc32', 'xxhash' and 'murmurhash' algorithms) permitting easy comparison of R\n language objects, as well as a function 'hmac()' to create hash-based\n message authentication code. Please note that this package is not meant to\n be deployed for cryptographic purposes for which more comprehensive (and\n widely tested) libraries such as 'OpenSSL' should be used.",
+				"URL" : "http://dirk.eddelbuettel.com/code/digest.html",
+				"BugReports" : "https://github.com/eddelbuettel/digest/issues",
+				"Depends" : "R (>= 2.4.1)",
+				"License" : "GPL (>= 2)",
+				"Suggests" : "knitr, rmarkdown",
+				"VignetteBuilder" : "knitr",
+				"NeedsCompilation" : "yes",
+				"Packaged" : "2017-01-26 13:52:49.564188 UTC; edd",
+				"Repository" : "CRAN",
+				"Date/Publication" : "2017-01-27 10:18:01",
+				"Built" : "R 3.3.3; x86_64-w64-mingw32; 2017-04-14 01:03:06 UTC; windows"
+			}
+		},
+		"htmltools" : {
+			"Source" : "CRAN",
+			"Repository" : "https://cran.rstudio.com/",
+			"description" : {
+				"Package" : "htmltools",
+				"Type" : "Package",
+				"Title" : "Tools for HTML",
+				"Version" : "0.3.5",
+				"Date" : "2016-03-19",
+				"Author" : "RStudio, Inc.",
+				"Maintainer" : "Joe Cheng <joe@rstudio.com>",
+				"Description" : "Tools for HTML generation and output.",
+				"Depends" : "R (>= 2.14.1)",
+				"Imports" : "utils, digest, Rcpp",
+				"Suggests" : "markdown, testthat",
+				"Enhances" : "knitr",
+				"License" : "GPL (>= 2)",
+				"URL" : "https://github.com/rstudio/htmltools",
+				"BugReports" : "https://github.com/rstudio/htmltools/issues",
+				"RoxygenNote" : "5.0.1",
+				"LinkingTo" : "Rcpp",
+				"NeedsCompilation" : "yes",
+				"Packaged" : "2016-03-21 21:26:31 UTC; jcheng",
+				"Repository" : "CRAN",
+				"Date/Publication" : "2016-03-21 23:36:11",
+				"Built" : "R 3.3.3; x86_64-w64-mingw32; 2017-04-14 02:15:34 UTC; windows"
+			}
+		},
+		"httpuv" : {
+			"Source" : "CRAN",
+			"Repository" : "https://cran.rstudio.com/",
+			"description" : {
+				"Package" : "httpuv",
+				"Type" : "Package",
+				"Title" : "HTTP and WebSocket Server Library",
+				"Version" : "1.3.3",
+				"Date" : "2015-08-03",
+				"Author" : "RStudio, Inc.",
+				"Copyright" : "RStudio, Inc.; Joyent, Inc.; Nginx Inc.; Igor Sysoev; Niels\nProvos; Internet Systems Consortium, Inc.; Alexander Chemeris",
+				"Maintainer" : "Joe Cheng <joe@rstudio.com>",
+				"Description" : "Provides low-level socket and protocol support for handling\n    HTTP and WebSocket requests directly from within R. It is primarily\n    intended as a building block for other packages, rather than making it\n    particularly easy to create complete web applications using httpuv alone.\n    httpuv is built on top of the libuv and http-parser C libraries, both of\n    which were developed by Joyent, Inc. (See LICENSE file for libuv and\n    http-parser license information.)",
+				"License" : "GPL-3 | file LICENSE",
+				"Depends" : "R (>= 2.15.1), methods",
+				"Imports" : "Rcpp (>= 0.11.0), utils",
+				"LinkingTo" : "Rcpp",
+				"URL" : "https://github.com/rstudio/httpuv",
+				"SystemRequirements" : "GNU make",
+				"NeedsCompilation" : "yes",
+				"Packaged" : "2015-08-03 18:49:59 UTC; jcheng",
+				"Repository" : "CRAN",
+				"Date/Publication" : "2015-08-04 00:32:50",
+				"Built" : "R 3.3.3; x86_64-w64-mingw32; 2017-04-14 02:15:39 UTC; windows"
+			}
+		},
+		"jsonlite" : {
+			"Source" : "CRAN",
+			"Repository" : "https://cran.rstudio.com/",
+			"description" : {
+				"Package" : "jsonlite",
+				"Version" : "1.4",
+				"Title" : "A Robust, High Performance JSON Parser and Generator for R",
+				"License" : "MIT + file LICENSE",
+				"NeedsCompilation" : "yes",
+				"Depends" : "methods",
+				"Author" : "Jeroen Ooms, Duncan Temple Lang, Lloyd Hilaiel",
+				"URL" : "https://arxiv.org/abs/1403.2805,\nhttps://www.opencpu.org/posts/jsonlite-a-smarter-json-encoder",
+				"BugReports" : "http://github.com/jeroen/jsonlite/issues",
+				"Maintainer" : "Jeroen Ooms <jeroen@berkeley.edu>",
+				"VignetteBuilder" : "knitr, R.rsp",
+				"Description" : "A fast JSON parser and generator optimized for statistical data\n    and the web. Started out as a fork of 'RJSONIO', but has been completely\n    rewritten in recent versions. The package offers flexible, robust, high\n    performance tools for working with JSON in R and is particularly powerful\n    for building pipelines and interacting with a web API. The implementation is\n    based on the mapping described in the vignette (Ooms, 2014). In addition to\n    converting JSON data from/to R objects, 'jsonlite' contains functions to\n    stream, validate, and prettify JSON data. The unit tests included with the\n    package verify that all edge cases are encoded and decoded consistently for\n    use with dynamic data in systems and applications.",
+				"Suggests" : "httr, curl, plyr, testthat, knitr, rmarkdown, R.rsp, sp",
+				"RoxygenNote" : "6.0.1",
+				"Packaged" : "2017-04-08 16:09:59 UTC; jeroen",
+				"Repository" : "CRAN",
+				"Date/Publication" : "2017-04-08 21:03:40 UTC",
+				"Built" : "R 3.3.3; x86_64-w64-mingw32; 2017-04-14 01:03:22 UTC; windows"
+			}
+		},
+		"mime" : {
+			"Source" : "CRAN",
+			"Repository" : "https://cran.rstudio.com/",
+			"description" : {
+				"Package" : "mime",
+				"Type" : "Package",
+				"Title" : "Map Filenames to MIME Types",
+				"Version" : "0.5",
+				"Date" : "2016-07-07",
+				"Authors@R" : "c(person(\"Jeffrey\", \"Horner\", role = \"ctb\"),\n    person(\"Yihui\", \"Xie\", role = c(\"aut\", \"cre\"), email = \"xie@yihui.name\"))",
+				"Maintainer" : "Yihui Xie <xie@yihui.name>",
+				"Description" : "Guesses the MIME type from a filename extension using the data\n    derived from /etc/mime.types in UNIX-type systems.",
+				"Imports" : "tools",
+				"License" : "GPL",
+				"URL" : "https://github.com/yihui/mime",
+				"BugReports" : "https://github.com/yihui/mime/issues",
+				"LazyData" : "TRUE",
+				"RoxygenNote" : "5.0.1",
+				"NeedsCompilation" : "yes",
+				"Packaged" : "2016-07-07 04:44:41 UTC; yihui",
+				"Author" : "Jeffrey Horner [ctb],\n  Yihui Xie [aut, cre]",
+				"Repository" : "CRAN",
+				"Date/Publication" : "2016-07-07 07:38:00",
+				"Built" : "R 3.3.2; x86_64-w64-mingw32; 2016-10-31 23:26:24 UTC; windows"
+			}
+		},
+		"packrat" : {
+			"Source" : "CRAN",
+			"Repository" : "https://cran.rstudio.com/",
+			"description" : {
+				"Package" : "packrat",
+				"Type" : "Package",
+				"Title" : "A Dependency Management System for Projects and their R Package\nDependencies",
+				"Version" : "0.4.8-1",
+				"Author" : "Kevin Ushey, Jonathan McPherson, Joe Cheng, Aron Atkins, JJ Allaire",
+				"Maintainer" : "Kevin Ushey <kevin@rstudio.com>",
+				"Description" : "Manage the R packages your project depends\n    on in an isolated, portable, and reproducible way.",
+				"License" : "GPL-2",
+				"Depends" : "R (>= 3.0.0)",
+				"Imports" : "tools, utils",
+				"Suggests" : "testthat (>= 0.7), devtools, httr, knitr, rmarkdown",
+				"Enhances" : "BiocInstaller",
+				"URL" : "https://github.com/rstudio/packrat/",
+				"BugReports" : "https://github.com/rstudio/packrat/issues",
+				"RoxygenNote" : "5.0.1",
+				"NeedsCompilation" : "no",
+				"Packaged" : "2016-09-07 21:30:04 UTC; kevin",
+				"Repository" : "CRAN",
+				"Date/Publication" : "2016-09-07 23:37:52",
+				"Built" : "R 3.3.3; ; 2017-04-14 01:31:51 UTC; windows"
+			}
+		},
+		"pwr" : {
+			"Source" : "CRAN",
+			"Repository" : "https://cran.rstudio.com/",
+			"description" : {
+				"Package" : "pwr",
+				"Version" : "1.2-1",
+				"Date" : "2017-03-25",
+				"Title" : "Basic Functions for Power Analysis",
+				"Authors@R" : "c(person(\"Stephane\", \"Champely\", role=c(\"aut\")),\n  person(\"Claus\", \"Ekstrom\", role=\"ctb\"),\n  person(\"Peter\", \"Dalgaard\", role=\"ctb\"),\n  person(\"Jeffrey\", \"Gill\", role=\"ctb\"),\n  person(\"Stephan\", \"Weibelzahl\", role=\"ctb\"),\n  person(\"Aditya\", \"Anandkumar\", role=\"ctb\"),\n  person(\"Clay\", \"Ford\", role=\"ctb\"),\n  person(\"Robert\", \"Volcic\", role=\"ctb\"),\n  person(\"Helios\", \"De Rosario\", role=\"cre\",\n  email=\"helios.derosario@gmail.com\"))",
+				"Description" : "Power analysis functions along the lines of Cohen (1988).",
+				"Imports" : "stats, graphics",
+				"Suggests" : "ggplot2, scales, knitr, rmarkdown",
+				"License" : "GPL (>= 3)",
+				"URL" : "https://github.com/heliosdrm/pwr",
+				"VignetteBuilder" : "knitr",
+				"RoxygenNote" : "6.0.1",
+				"NeedsCompilation" : "no",
+				"Packaged" : "2017-03-24 23:15:42 UTC; meliana",
+				"Author" : "Stephane Champely [aut],\n  Claus Ekstrom [ctb],\n  Peter Dalgaard [ctb],\n  Jeffrey Gill [ctb],\n  Stephan Weibelzahl [ctb],\n  Aditya Anandkumar [ctb],\n  Clay Ford [ctb],\n  Robert Volcic [ctb],\n  Helios De Rosario [cre]",
+				"Maintainer" : "Helios De Rosario <helios.derosario@gmail.com>",
+				"Repository" : "CRAN",
+				"Date/Publication" : "2017-03-25 10:58:41 UTC",
+				"Built" : "R 3.3.3; ; 2017-04-14 01:23:34 UTC; windows"
+			}
+		},
+		"shiny" : {
+			"Source" : "CRAN",
+			"Repository" : "https://cran.rstudio.com/",
+			"description" : {
+				"Package" : "shiny",
+				"Type" : "Package",
+				"Title" : "Web Application Framework for R",
+				"Version" : "1.0.1",
+				"Authors@R" : "c(\n    person(\"Winston\", \"Chang\", role = c(\"aut\", \"cre\"), email = \"winston@rstudio.com\"),\n    person(\"Joe\", \"Cheng\", role = \"aut\", email = \"joe@rstudio.com\"),\n    person(\"JJ\", \"Allaire\", role = \"aut\", email = \"jj@rstudio.com\"),\n    person(\"Yihui\", \"Xie\", role = \"aut\", email = \"yihui@rstudio.com\"),\n    person(\"Jonathan\", \"McPherson\", role = \"aut\", email = \"jonathan@rstudio.com\"),\n    person(family = \"RStudio\", role = \"cph\"),\n    person(family = \"jQuery Foundation\", role = \"cph\",\n    comment = \"jQuery library and jQuery UI library\"),\n    person(family = \"jQuery contributors\", role = c(\"ctb\", \"cph\"),\n    comment = \"jQuery library; authors listed in inst/www/shared/jquery-AUTHORS.txt\"),\n    person(family = \"jQuery UI contributors\", role = c(\"ctb\", \"cph\"),\n    comment = \"jQuery UI library; authors listed in inst/www/shared/jqueryui/AUTHORS.txt\"),\n    person(\"Mark\", \"Otto\", role = \"ctb\",\n    comment = \"Bootstrap library\"),\n    person(\"Jacob\", \"Thornton\", role = \"ctb\",\n    comment = \"Bootstrap library\"),\n    person(family = \"Bootstrap contributors\", role = \"ctb\",\n    comment = \"Bootstrap library\"),\n    person(family = \"Twitter, Inc\", role = \"cph\",\n    comment = \"Bootstrap library\"),\n    person(\"Alexander\", \"Farkas\", role = c(\"ctb\", \"cph\"),\n    comment = \"html5shiv library\"),\n    person(\"Scott\", \"Jehl\", role = c(\"ctb\", \"cph\"),\n    comment = \"Respond.js library\"),\n    person(\"Stefan\", \"Petre\", role = c(\"ctb\", \"cph\"),\n    comment = \"Bootstrap-datepicker library\"),\n    person(\"Andrew\", \"Rowls\", role = c(\"ctb\", \"cph\"),\n    comment = \"Bootstrap-datepicker library\"),\n    person(\"Dave\", \"Gandy\", role = c(\"ctb\", \"cph\"),\n    comment = \"Font-Awesome font\"),\n    person(\"Brian\", \"Reavis\", role = c(\"ctb\", \"cph\"),\n    comment = \"selectize.js library\"),\n    person(\"Kristopher Michael\", \"Kowal\", role = c(\"ctb\", \"cph\"),\n    comment = \"es5-shim library\"),\n    person(family = \"es5-shim contributors\", role = c(\"ctb\", \"cph\"),\n    comment = \"es5-shim library\"),\n    person(\"Denis\", \"Ineshin\", role = c(\"ctb\", \"cph\"),\n    comment = \"ion.rangeSlider library\"),\n    person(\"Sami\", \"Samhuri\", role = c(\"ctb\", \"cph\"),\n    comment = \"Javascript strftime library\"),\n    person(family = \"SpryMedia Limited\", role = c(\"ctb\", \"cph\"),\n    comment = \"DataTables library\"),\n    person(\"John\", \"Fraser\", role = c(\"ctb\", \"cph\"),\n    comment = \"showdown.js library\"),\n    person(\"John\", \"Gruber\", role = c(\"ctb\", \"cph\"),\n    comment = \"showdown.js library\"),\n    person(\"Ivan\", \"Sagalaev\", role = c(\"ctb\", \"cph\"),\n    comment = \"highlight.js library\"),\n    person(family = \"R Core Team\", role = c(\"ctb\", \"cph\"),\n    comment = \"tar implementation from R\")\n    )",
+				"Description" : "Makes it incredibly easy to build interactive web\n    applications with R. Automatic \"reactive\" binding between inputs and\n    outputs and extensive pre-built widgets make it possible to build\n    beautiful, responsive, and powerful applications with minimal effort.",
+				"License" : "GPL-3 | file LICENSE",
+				"Depends" : "R (>= 3.0.0), methods",
+				"Imports" : "utils, httpuv (>= 1.3.3), mime (>= 0.3), jsonlite (>= 0.9.16),\nxtable, digest, htmltools (>= 0.3.5), R6 (>= 2.0), sourcetools",
+				"Suggests" : "datasets, Cairo (>= 1.5-5), testthat, knitr (>= 1.6),\nmarkdown, rmarkdown, ggplot2, magrittr",
+				"URL" : "http://shiny.rstudio.com",
+				"BugReports" : "https://github.com/rstudio/shiny/issues",
+				"Collate" : "'app.R' 'bookmark-state-local.R' 'stack.R' 'bookmark-state.R'\n'bootstrap-layout.R' 'conditions.R' 'map.R' 'globals.R'\n'utils.R' 'bootstrap.R' 'cache.R' 'diagnose.R' 'fileupload.R'\n'graph.R' 'reactives.R' 'reactive-domains.R' 'history.R'\n'hooks.R' 'html-deps.R' 'htmltools.R' 'image-interact-opts.R'\n'image-interact.R' 'imageutils.R' 'input-action.R'\n'input-checkbox.R' 'input-checkboxgroup.R' 'input-date.R'\n'input-daterange.R' 'input-file.R' 'input-numeric.R'\n'input-password.R' 'input-radiobuttons.R' 'input-select.R'\n'input-slider.R' 'input-submit.R' 'input-text.R'\n'input-textarea.R' 'input-utils.R' 'insert-ui.R' 'jqueryui.R'\n'middleware-shiny.R' 'middleware.R' 'modal.R' 'modules.R'\n'notifications.R' 'priorityqueue.R' 'progress.R' 'react.R'\n'render-plot.R' 'render-table.R' 'run-url.R' 'serializers.R'\n'server-input-handlers.R' 'server.R' 'shiny-options.R'\n'shiny.R' 'shinyui.R' 'shinywrappers.R' 'showcase.R' 'tar.R'\n'test-export.R' 'timer.R' 'update-input.R'",
+				"RoxygenNote" : "6.0.1",
+				"NeedsCompilation" : "no",
+				"Packaged" : "2017-03-31 21:07:22 UTC; winston",
+				"Author" : "Winston Chang [aut, cre],\n  Joe Cheng [aut],\n  JJ Allaire [aut],\n  Yihui Xie [aut],\n  Jonathan McPherson [aut],\n  RStudio [cph],\n  jQuery Foundation [cph] (jQuery library and jQuery UI library),\n  jQuery contributors [ctb, cph] (jQuery library; authors listed in\n    inst/www/shared/jquery-AUTHORS.txt),\n  jQuery UI contributors [ctb, cph] (jQuery UI library; authors listed in\n    inst/www/shared/jqueryui/AUTHORS.txt),\n  Mark Otto [ctb] (Bootstrap library),\n  Jacob Thornton [ctb] (Bootstrap library),\n  Bootstrap contributors [ctb] (Bootstrap library),\n  Twitter, Inc [cph] (Bootstrap library),\n  Alexander Farkas [ctb, cph] (html5shiv library),\n  Scott Jehl [ctb, cph] (Respond.js library),\n  Stefan Petre [ctb, cph] (Bootstrap-datepicker library),\n  Andrew Rowls [ctb, cph] (Bootstrap-datepicker library),\n  Dave Gandy [ctb, cph] (Font-Awesome font),\n  Brian Reavis [ctb, cph] (selectize.js library),\n  Kristopher Michael Kowal [ctb, cph] (es5-shim library),\n  es5-shim contributors [ctb, cph] (es5-shim library),\n  Denis Ineshin [ctb, cph] (ion.rangeSlider library),\n  Sami Samhuri [ctb, cph] (Javascript strftime library),\n  SpryMedia Limited [ctb, cph] (DataTables library),\n  John Fraser [ctb, cph] (showdown.js library),\n  John Gruber [ctb, cph] (showdown.js library),\n  Ivan Sagalaev [ctb, cph] (highlight.js library),\n  R Core Team [ctb, cph] (tar implementation from R)",
+				"Maintainer" : "Winston Chang <winston@rstudio.com>",
+				"Repository" : "CRAN",
+				"Date/Publication" : "2017-04-01 17:25:17 UTC",
+				"Built" : "R 3.3.2; ; 2017-04-15 13:10:36 UTC; windows"
+			}
+		},
+		"sourcetools" : {
+			"Source" : "CRAN",
+			"Repository" : "https://cran.rstudio.com/",
+			"description" : {
+				"Package" : "sourcetools",
+				"Type" : "Package",
+				"Title" : "Tools for Reading, Tokenizing and Parsing R Code",
+				"Version" : "0.1.6",
+				"Author" : "Kevin Ushey",
+				"Maintainer" : "Kevin Ushey <kevinushey@gmail.com>",
+				"Description" : "Tools for the reading and tokenization of R code. The\n    'sourcetools' package provides both an R and C++ interface for the tokenization\n    of R code, and helpers for interacting with the tokenized representation of R\n    code.",
+				"License" : "MIT + file LICENSE",
+				"LazyData" : "TRUE",
+				"Depends" : "R (>= 3.0.2)",
+				"Suggests" : "testthat",
+				"RoxygenNote" : "5.0.1",
+				"BugReports" : "https://github.com/kevinushey/sourcetools/issues",
+				"Encoding" : "UTF-8",
+				"NeedsCompilation" : "yes",
+				"Packaged" : "2017-04-05 19:41:15 UTC; kevin",
+				"Repository" : "CRAN",
+				"Date/Publication" : "2017-04-05 21:57:43 UTC",
+				"Built" : "R 3.3.3; x86_64-w64-mingw32; 2017-04-14 01:03:26 UTC; windows"
+			}
+		},
+		"xtable" : {
+			"Source" : "CRAN",
+			"Repository" : "https://cran.rstudio.com/",
+			"description" : {
+				"Package" : "xtable",
+				"Version" : "1.8-2",
+				"Date" : "2016-01-08",
+				"Title" : "Export Tables to LaTeX or HTML",
+				"Author" : "David B. Dahl <dahl@stat.byu.edu>",
+				"Maintainer" : "David Scott <d.scott@auckland.ac.nz>",
+				"Imports" : "stats, utils",
+				"Suggests" : "knitr, lsmeans, spdep, splm, sphet, plm, zoo, survival",
+				"VignetteBuilder" : "knitr",
+				"Description" : "Coerce data to LaTeX and HTML tables.",
+				"URL" : "http://xtable.r-forge.r-project.org/",
+				"Depends" : "R (>= 2.10.0)",
+				"License" : "GPL (>= 2)",
+				"Repository" : "CRAN",
+				"NeedsCompilation" : "no",
+				"Packaged" : "2016-02-02 02:58:02 UTC; dsco036",
+				"Date/Publication" : "2016-02-05 19:22:18",
+				"Built" : "R 3.3.3; ; 2017-04-14 01:03:25 UTC; windows"
+			}
+		}
+	},
+	"files" : {
+		"packrat/desc/digest" : {
+			"checksum" : "e2f5620ac4f2db3f3aeb689757884077"
+		},
+		"packrat/desc/htmltools" : {
+			"checksum" : "1c1cb55c44286d870bf86183f1ddd4ad"
+		},
+		"packrat/desc/httpuv" : {
+			"checksum" : "6ade235b733b8d3fd467725634f251f8"
+		},
+		"packrat/desc/jsonlite" : {
+			"checksum" : "7f2b3a272baa82a83ed0778fac5b2f92"
+		},
+		"packrat/desc/mime" : {
+			"checksum" : "6c6ec8d85fe5e77739ea6f444121c8cc"
+		},
+		"packrat/desc/packrat" : {
+			"checksum" : "52e2c8aa4b1964aa3acbe588b2a9c408"
+		},
+		"packrat/desc/pwr" : {
+			"checksum" : "6e73ec4944dbfc137235b039b73978da"
+		},
+		"packrat/desc/R6" : {
+			"checksum" : "9f4a1a2ada9fe10e7a8ded5a173bc75e"
+		},
+		"packrat/desc/Rcpp" : {
+			"checksum" : "de2bb8745090780e0ff1fe54c12cc21d"
+		},
+		"packrat/desc/shiny" : {
+			"checksum" : "8e2806451d0d26d5fc81e6536fc95be0"
+		},
+		"packrat/desc/sourcetools" : {
+			"checksum" : "5f2f8f770cfbb6926b15c908afb5af89"
+		},
+		"packrat/desc/xtable" : {
+			"checksum" : "5b09d104c70f3fd029e88de2f168ea16"
+		},
+		"packrat/packrat.lock" : {
+			"checksum" : "c10cd6ef9cdc058a1bd0b6585e816dc5"
+		},
+		"server.R" : {
+			"checksum" : "8e5d993a5df2a19d9d40d92b1a804f95"
+		},
+		"ui.R" : {
+			"checksum" : "0e577049ee00bd18084f9276e5ebc93d"
+		},
+		"www/_DS_Store" : {
+			"checksum" : "b1ecad5d34d7288b1b247527b7f01f17"
+		},
+		"www/_DS_Store(1)" : {
+			"checksum" : "8abbbb6a06a0f2a5732e9362ece4af9b"
+		},
+		"www/css/jquery-ui-1.10.4.custom.css" : {
+			"checksum" : "d75e275413b4d83399b2918a4830c086"
+		},
+		"www/css/jquery-ui-1.10.4.custom.min.css" : {
+			"checksum" : "3ecd7495d6f213dcf6515403f9216123"
+		},
+		"www/images/_DS_Store" : {
+			"checksum" : "010a292270fd7b3cc0d072d89732fd16"
+		},
+		"www/images/_DS_Store(1)" : {
+			"checksum" : "4d7245e0a689745e32dedeac4c57938b"
+		},
+		"www/images/animated-overlay.gif" : {
+			"checksum" : "2b912f7c0653008ca28ebacda49025e7"
+		},
+		"www/images/randomize.gif" : {
+			"checksum" : "d7ca80d48d38e0ace02416e7707ba073"
+		},
+		"www/images/SMARTdesignA__.gif" : {
+			"checksum" : "34091098691028150fb48c3365b8e203"
+		},
+		"www/images/SMARTdesignA__ArCnrE.gif" : {
+			"checksum" : "4f5d3f87b09d2bc2b7610155d8282eb8"
+		},
+		"www/images/SMARTdesignA__ArCnrF.gif" : {
+			"checksum" : "6012ee9152f5ce8828491ec8068a6ce9"
+		},
+		"www/images/SMARTdesignA__ArDnrE.gif" : {
+			"checksum" : "60fb1dbc586900b47438e95eda28ac28"
+		},
+		"www/images/SMARTdesignA__ArDnrF.gif" : {
+			"checksum" : "3c08696e1b4d81154ff06d6ca429f39e"
+		},
+		"www/images/SMARTdesignA__BrGnrI.gif" : {
+			"checksum" : "ab3303212b97042f3a9617b2a4cb7eb8"
+		},
+		"www/images/SMARTdesignA__BrGnrJ.gif" : {
+			"checksum" : "920c277f06959ce4a315672fff6ef973"
+		},
+		"www/images/SMARTdesignA__BrHnrI.gif" : {
+			"checksum" : "160b974a3faf48f556df566eda5051f6"
+		},
+		"www/images/SMARTdesignA__BrHnrJ.gif" : {
+			"checksum" : "40063eccfa2362fcbc34aeb7a46026e4"
+		},
+		"www/images/SMARTdesignA_ArCnrE_.gif" : {
+			"checksum" : "9226fc176b9e486531b68671f3ef1a88"
+		},
+		"www/images/SMARTdesignA_ArCnrE_ArCnrF.gif" : {
+			"checksum" : "158a77b22b617af2205340ea75637ab3"
+		},
+		"www/images/SMARTdesignA_ArCnrE_ArDnrE.gif" : {
+			"checksum" : "ce887a6984ffae7463d9af13ee2b78a1"
+		},
+		"www/images/SMARTdesignA_ArCnrE_ArDnrF.gif" : {
+			"checksum" : "5037c37ed4fe017704727147dfd40e18"
+		},
+		"www/images/SMARTdesignA_ArCnrE_BrGnrI.gif" : {
+			"checksum" : "75d142235e65d23cc047ecd13c8289df"
+		},
+		"www/images/SMARTdesignA_ArCnrE_BrGnrJ.gif" : {
+			"checksum" : "ec9e785ec0aa6426d25114e6c10d692a"
+		},
+		"www/images/SMARTdesignA_ArCnrE_BrHnrI.gif" : {
+			"checksum" : "1d97fd318d4b6f06123e4df33a2ec03e"
+		},
+		"www/images/SMARTdesignA_ArCnrE_BrHnrJ.gif" : {
+			"checksum" : "543ba12cfe315229eab879af8dfb2b2b"
+		},
+		"www/images/SMARTdesignA_ArCnrF_.gif" : {
+			"checksum" : "947768db42ebede8ecff40bad1c69287"
+		},
+		"www/images/SMARTdesignA_ArCnrF_ArCnrE.gif" : {
+			"checksum" : "731eaa40ce2f64c7e82229ed9d2f4ac9"
+		},
+		"www/images/SMARTdesignA_ArCnrF_ArDnrE.gif" : {
+			"checksum" : "f6ed930dffcd8d0dc4a8c37243a51784"
+		},
+		"www/images/SMARTdesignA_ArCnrF_ArDnrF.gif" : {
+			"checksum" : "b967cd52d44b7084926232211ed5408c"
+		},
+		"www/images/SMARTdesignA_ArCnrF_BrGnrI.gif" : {
+			"checksum" : "e2efe64e50f2169aafc1bbbb7da541c0"
+		},
+		"www/images/SMARTdesignA_ArCnrF_BrGnrJ.gif" : {
+			"checksum" : "3863317d3f5629a400eabdeaba4852c3"
+		},
+		"www/images/SMARTdesignA_ArCnrF_BrHnrI.gif" : {
+			"checksum" : "0146db2b5868dfb0963a83cbff916c5c"
+		},
+		"www/images/SMARTdesignA_ArCnrF_BrHnrJ.gif" : {
+			"checksum" : "e29edb9ae8408a3a85fdf5c13fe5ee84"
+		},
+		"www/images/SMARTdesignA_ArDnrE_.gif" : {
+			"checksum" : "f0908d6351910af8a59594eaf393d105"
+		},
+		"www/images/SMARTdesignA_ArDnrE_ArCnrE.gif" : {
+			"checksum" : "33f518c58827a8a281cb45c25e08f726"
+		},
+		"www/images/SMARTdesignA_ArDnrE_ArCnrF.gif" : {
+			"checksum" : "a1d0226c4e92963705ff79f16a95452c"
+		},
+		"www/images/SMARTdesignA_ArDnrE_ArDnrF.gif" : {
+			"checksum" : "7c65f48793138ae9e99498396b5d80d5"
+		},
+		"www/images/SMARTdesignA_ArDnrE_BrGnrI.gif" : {
+			"checksum" : "3741eb681ac0c78d5ccdf56cf08336b2"
+		},
+		"www/images/SMARTdesignA_ArDnrE_BrGnrJ.gif" : {
+			"checksum" : "038bde554de26251eaa94cbf6d68e250"
+		},
+		"www/images/SMARTdesignA_ArDnrE_BrHnrI.gif" : {
+			"checksum" : "70122b367a81e786691526735a7d4e58"
+		},
+		"www/images/SMARTdesignA_ArDnrE_BrHnrJ.gif" : {
+			"checksum" : "75004225f058d7d128f2e453c84d89e8"
+		},
+		"www/images/SMARTdesignA_ArDnrF_.gif" : {
+			"checksum" : "f40d54649606a99bf0fd9d8cbd7a6a11"
+		},
+		"www/images/SMARTdesignA_ArDnrF_ArCnrE.gif" : {
+			"checksum" : "d967373abd259a9b33f5275e7a19a1b6"
+		},
+		"www/images/SMARTdesignA_ArDnrF_ArCnrF.gif" : {
+			"checksum" : "389a9a1c0f7b37e164d64dc6ff5f646a"
+		},
+		"www/images/SMARTdesignA_ArDnrF_ArDnrE.gif" : {
+			"checksum" : "9d65e47fbafdf6532615f4f5e7d963b0"
+		},
+		"www/images/SMARTdesignA_ArDnrF_BrGnrI.gif" : {
+			"checksum" : "7076f1074b9c3338349a44c484bb2cf3"
+		},
+		"www/images/SMARTdesignA_ArDnrF_BrGnrJ.gif" : {
+			"checksum" : "cbd08bf7e66bf1fc3f2e171261f2df4f"
+		},
+		"www/images/SMARTdesignA_ArDnrF_BrHnrI.gif" : {
+			"checksum" : "fc80a0299aa7452dad54c6a4601aa30c"
+		},
+		"www/images/SMARTdesignA_ArDnrF_BrHnrJ.gif" : {
+			"checksum" : "210be9823d61ce10b25cdab81be5d50f"
+		},
+		"www/images/SMARTdesignA_BrGnrI_.gif" : {
+			"checksum" : "ff9a2b6e6f6719a838bc3d7f8360166d"
+		},
+		"www/images/SMARTdesignA_BrGnrI_ArCnrE.gif" : {
+			"checksum" : "39dc55c215d4b0003532e9d71613ad1b"
+		},
+		"www/images/SMARTdesignA_BrGnrI_ArCnrF.gif" : {
+			"checksum" : "b7ede474d6638027d12e2ff61e1d0c2b"
+		},
+		"www/images/SMARTdesignA_BrGnrI_ArDnrE.gif" : {
+			"checksum" : "13cd1c6119e0ac3dd8fc03fa7b935833"
+		},
+		"www/images/SMARTdesignA_BrGnrI_ArDnrF.gif" : {
+			"checksum" : "cbea6dc68cb500c9ebf7f2f0a88cecaf"
+		},
+		"www/images/SMARTdesignA_BrGnrI_BrGnrJ.gif" : {
+			"checksum" : "83c24b0cca3cf6b28e588028e191752f"
+		},
+		"www/images/SMARTdesignA_BrGnrI_BrHnrI.gif" : {
+			"checksum" : "374fe6d137bb427bf9712b10c083c3d1"
+		},
+		"www/images/SMARTdesignA_BrGnrI_BrHnrJ.gif" : {
+			"checksum" : "345b43042c9c8677750cff2be60c1ab5"
+		},
+		"www/images/SMARTdesignA_BrGnrJ_.gif" : {
+			"checksum" : "e320164010a2caa5f6fe80f21f8446a4"
+		},
+		"www/images/SMARTdesignA_BrGnrJ_ArCnrE.gif" : {
+			"checksum" : "9cbece36a2aee08677e6070f1aa05d2b"
+		},
+		"www/images/SMARTdesignA_BrGnrJ_ArCnrF.gif" : {
+			"checksum" : "057f14c9600315d9a8985977d79e035f"
+		},
+		"www/images/SMARTdesignA_BrGnrJ_ArDnrE.gif" : {
+			"checksum" : "73282b718b229233a1016d20db00453a"
+		},
+		"www/images/SMARTdesignA_BrGnrJ_ArDnrF.gif" : {
+			"checksum" : "4b2191730beb295cf3c1644030ff324e"
+		},
+		"www/images/SMARTdesignA_BrGnrJ_BrGnrI.gif" : {
+			"checksum" : "6751f92a7afcab52dee48007af17374a"
+		},
+		"www/images/SMARTdesignA_BrGnrJ_BrHnrI.gif" : {
+			"checksum" : "f39c6155fecf21936537a16de4c68c2c"
+		},
+		"www/images/SMARTdesignA_BrGnrJ_BrHnrJ.gif" : {
+			"checksum" : "f8ce107976bd715b1cfe7af5b48c6503"
+		},
+		"www/images/SMARTdesignA_BrHnrI_.gif" : {
+			"checksum" : "912f354e5bdcfe8f65f385e1be90ac06"
+		},
+		"www/images/SMARTdesignA_BrHnrI_ArCnrE.gif" : {
+			"checksum" : "0c5d5719f23060739167bf166edd7229"
+		},
+		"www/images/SMARTdesignA_BrHnrI_ArCnrF.gif" : {
+			"checksum" : "134ab2ee1422d80049b5cd69d0d99889"
+		},
+		"www/images/SMARTdesignA_BrHnrI_ArDnrE.gif" : {
+			"checksum" : "abb4a49acfcde56dc8ff6b5c0d9aff34"
+		},
+		"www/images/SMARTdesignA_BrHnrI_ArDnrF.gif" : {
+			"checksum" : "25a576c77e106f93daf7c07939c05375"
+		},
+		"www/images/SMARTdesignA_BrHnrI_BrGnrI.gif" : {
+			"checksum" : "c3b769feb5fd55356c7e9093fb4489e9"
+		},
+		"www/images/SMARTdesignA_BrHnrI_BrGnrJ.gif" : {
+			"checksum" : "1bf7c5366a657ca8ad3807b05734505c"
+		},
+		"www/images/SMARTdesignA_BrHnrI_BrHnrJ.gif" : {
+			"checksum" : "6ca52d460ead8a5fa4e592b76bbd8ce5"
+		},
+		"www/images/SMARTdesignA_BrHnrJ_.gif" : {
+			"checksum" : "ea90d02175370389dcc97fdc8c14dd74"
+		},
+		"www/images/SMARTdesignA_BrHnrJ_ArCnrE.gif" : {
+			"checksum" : "f18deb8fe892097d6d34a80128ddd438"
+		},
+		"www/images/SMARTdesignA_BrHnrJ_ArCnrF.gif" : {
+			"checksum" : "52bbe0e82409777e4fb9555f8c1d3a8e"
+		},
+		"www/images/SMARTdesignA_BrHnrJ_ArDnrE.gif" : {
+			"checksum" : "6b95142eb12853a2f940e36027f9b0d7"
+		},
+		"www/images/SMARTdesignA_BrHnrJ_ArDnrF.gif" : {
+			"checksum" : "606674e8b2a4833ba20ef51daf37f2d4"
+		},
+		"www/images/SMARTdesignA_BrHnrJ_BrGnrI.gif" : {
+			"checksum" : "be6c048aa3681380766fb7da7b25a58a"
+		},
+		"www/images/SMARTdesignA_BrHnrJ_BrGnrJ.gif" : {
+			"checksum" : "88423600be9fa150591041e2826218aa"
+		},
+		"www/images/SMARTdesignA_BrHnrJ_BrHnrI.gif" : {
+			"checksum" : "196c84141d270ac037dc2630b595ac14"
+		},
+		"www/images/SMARTdesignB__.gif" : {
+			"checksum" : "1b752e126a1b9d82938d7ff598a7db17"
+		},
+		"www/images/SMARTdesignB__ArCnrD.gif" : {
+			"checksum" : "32c192ceb6e0bbd4f3cc00cd8a6f5f4d"
+		},
+		"www/images/SMARTdesignB__ArCnrE.gif" : {
+			"checksum" : "3235f955f5ee0d79225f1227af050606"
+		},
+		"www/images/SMARTdesignB__BrFnrG.gif" : {
+			"checksum" : "5c2980214055d55745fef0994f7c7e02"
+		},
+		"www/images/SMARTdesignB__BrFnrH.gif" : {
+			"checksum" : "a27c63b822c37499e28279adf1d8184a"
+		},
+		"www/images/SMARTdesignB_ArCnrD_.gif" : {
+			"checksum" : "c220587439e1a8c046332f330b02682b"
+		},
+		"www/images/SMARTdesignB_ArCnrD_ArCnrE.gif" : {
+			"checksum" : "c8ab361cc5ca5cd4d3bec971c6b4adc0"
+		},
+		"www/images/SMARTdesignB_ArCnrD_BrFnrG.gif" : {
+			"checksum" : "4d018cbce7acbfa6fc5570147d563241"
+		},
+		"www/images/SMARTdesignB_ArCnrD_BrFnrH.gif" : {
+			"checksum" : "2c0aecfb69243817a371667df063ae3a"
+		},
+		"www/images/SMARTdesignB_ArCnrE_.gif" : {
+			"checksum" : "05dad84c686a2592086c47912c422eee"
+		},
+		"www/images/SMARTdesignB_ArCnrE_ArCnrD.gif" : {
+			"checksum" : "16b4c58f61a82d22a58d0d1f27204cdb"
+		},
+		"www/images/SMARTdesignB_ArCnrE_BrFnrG.gif" : {
+			"checksum" : "c901de7d3022ec077c092d8bef4bc1f1"
+		},
+		"www/images/SMARTdesignB_ArCnrE_BrFnrH.gif" : {
+			"checksum" : "4ee10c97366a81357a0caadcdffad69a"
+		},
+		"www/images/SMARTdesignB_BrFnrG_.gif" : {
+			"checksum" : "6ea5381dafe5b8b472545f63b5c09f9d"
+		},
+		"www/images/SMARTdesignB_BrFnrG_ArCnrD.gif" : {
+			"checksum" : "8238c5406644231b1a6a416532a33c8e"
+		},
+		"www/images/SMARTdesignB_BrFnrG_ArCnrE.gif" : {
+			"checksum" : "abf42f5d398f13f7901efa5dc4e9dac7"
+		},
+		"www/images/SMARTdesignB_BrFnrG_BrFnrH.gif" : {
+			"checksum" : "9aacee5790bfa8645ec849e905d4500b"
+		},
+		"www/images/SMARTdesignB_BrFnrH_.gif" : {
+			"checksum" : "f757ea2647aeeafc3305953160ff069d"
+		},
+		"www/images/SMARTdesignB_BrFnrH_ArCnrD.gif" : {
+			"checksum" : "d688ffafd3b3002919c88c67087ea172"
+		},
+		"www/images/SMARTdesignB_BrFnrH_ArCnrE.gif" : {
+			"checksum" : "17d07167186ecd04cf284710c25f0c18"
+		},
+		"www/images/SMARTdesignB_BrFnrH_BrFnrG.gif" : {
+			"checksum" : "f863fc525f86004b8a74c6e5f971cd11"
+		},
+		"www/images/SMARTdesignC__.gif" : {
+			"checksum" : "977068a665bb7c0428e81af761e0c0e7"
+		},
+		"www/images/SMARTdesignC__ArCnrD.gif" : {
+			"checksum" : "8b1f8fd2190bde876f705f5d415f9296"
+		},
+		"www/images/SMARTdesignC__ArCnrE.gif" : {
+			"checksum" : "153d0a465395eca4c723c65dc84718d7"
+		},
+		"www/images/SMARTdesignC__BrFnrG.gif" : {
+			"checksum" : "f4af04b039ad2b90e20bff5516c17ec8"
+		},
+		"www/images/SMARTdesignC_ArCnrD_.gif" : {
+			"checksum" : "039ed7c7a2ad41ce487815373c4b661e"
+		},
+		"www/images/SMARTdesignC_ArCnrD_ArCnrE.gif" : {
+			"checksum" : "de037d58adeae8e4e3b1b87f3bd5b71a"
+		},
+		"www/images/SMARTdesignC_ArCnrD_BrFnrG.gif" : {
+			"checksum" : "70ddbcca7bfe6f95db103988592b5d58"
+		},
+		"www/images/SMARTdesignC_ArCnrE_.gif" : {
+			"checksum" : "31179ced8b29399b498136e495df2c2c"
+		},
+		"www/images/SMARTdesignC_ArCnrE_ArCnrD.gif" : {
+			"checksum" : "d2f3bf0a3d7543bac11ae93df4c36076"
+		},
+		"www/images/SMARTdesignC_ArCnrE_ArCnrF.gif" : {
+			"checksum" : "d2f3bf0a3d7543bac11ae93df4c36076"
+		},
+		"www/images/SMARTdesignC_BrFnrG_.gif" : {
+			"checksum" : "d69504ca3c4c5b8d88b313f4a852b8a1"
+		},
+		"www/images/SMARTdesignC_BrFnrG_ArCnrD.gif" : {
+			"checksum" : "21a03021562ad2fb37ed9384135b6a45"
+		},
+		"www/images/SMARTdesignC_BrFnrG_ArCnrE.gif" : {
+			"checksum" : "4403727808db0d02b484316db2cb626e"
+		},
+		"www/images/SMARTdesignD__.gif" : {
+			"checksum" : "7e483c2dbb0dd0b629a01e5ddf366837"
+		},
+		"www/images/SMARTdesignD__AC.gif" : {
+			"checksum" : "8a5521d8ab1f752edc23fb7b6ba73464"
+		},
+		"www/images/SMARTdesignD__AD.gif" : {
+			"checksum" : "169b28282cad9b5994eed4adf6c9e414"
+		},
+		"www/images/SMARTdesignD__BE.gif" : {
+			"checksum" : "5266516b1699d68249cb9d5b093650d6"
+		},
+		"www/images/SMARTdesignD__BF.gif" : {
+			"checksum" : "ea880d8bc8262c99d667bb04c239b9b7"
+		},
+		"www/images/SMARTdesignD_AC_.gif" : {
+			"checksum" : "ae14c47621f8020df4d23160733709ab"
+		},
+		"www/images/SMARTdesignD_AC_AD.gif" : {
+			"checksum" : "ae0b02265c1843c9f17bafe588b91b99"
+		},
+		"www/images/SMARTdesignD_AC_BE.gif" : {
+			"checksum" : "ded6ffb17ca149f939a6e1107ea2b5bd"
+		},
+		"www/images/SMARTdesignD_AC_BF.gif" : {
+			"checksum" : "3262b75d70523916d3e43ff558ec8b56"
+		},
+		"www/images/SMARTdesignD_AD_.gif" : {
+			"checksum" : "724a79705e99cd41f5638f8c21839f42"
+		},
+		"www/images/SMARTdesignD_AD_AC.gif" : {
+			"checksum" : "de450abfc8a17f2cce67696b8d375d20"
+		},
+		"www/images/SMARTdesignD_AD_BE.gif" : {
+			"checksum" : "93e9ddbf59344645cc7e4bc5cbd58953"
+		},
+		"www/images/SMARTdesignD_AD_BF.gif" : {
+			"checksum" : "9acf3e99936d3b12f1587c4f4de1788e"
+		},
+		"www/images/SMARTdesignD_BE_.gif" : {
+			"checksum" : "4b6707794c22dfda302c932fb15d2afa"
+		},
+		"www/images/SMARTdesignD_BE_AC.gif" : {
+			"checksum" : "ad97b370cc4e66b67931787433f70f41"
+		},
+		"www/images/SMARTdesignD_BE_AD.gif" : {
+			"checksum" : "f68f9ba6f64512c0152731cb1d3d0ee0"
+		},
+		"www/images/SMARTdesignD_BE_BF.gif" : {
+			"checksum" : "34840c42e2d4eacaa74da812413ace91"
+		},
+		"www/images/SMARTdesignD_BF_.gif" : {
+			"checksum" : "5367e72bc6674b0934ab99bc14c54e99"
+		},
+		"www/images/SMARTdesignD_BF_AC.gif" : {
+			"checksum" : "b615b17de8f5631f5173b1f00262f879"
+		},
+		"www/images/SMARTdesignD_BF_AD.gif" : {
+			"checksum" : "086a67896ef4a4a6dc501ef99eb4cc05"
+		},
+		"www/images/SMARTdesignD_BF_BE.gif" : {
+			"checksum" : "2cb59fb3004da21e702f67e1d40b1ad6"
+		},
+		"www/images/ui-bg_flat_0_aaaaaa_40x100.png" : {
+			"checksum" : "43fbc695fb7813cd989e5ebea43aae4a"
+		},
+		"www/images/ui-bg_flat_55_fbf9ee_40x100.png" : {
+			"checksum" : "ad3a635936129de54ee91836d6a3b0e2"
+		},
+		"www/images/ui-bg_flat_75_e6e6e6_40x100.png" : {
+			"checksum" : "34848876075c10d610abfb55da7bdf12"
+		},
+		"www/images/ui-bg_flat_75_ffffff_40x100.png" : {
+			"checksum" : "46700d98feb81bf3eae61332bb74b553"
+		},
+		"www/images/ui-bg_glass_65_ffffff_1x400.png" : {
+			"checksum" : "8fee2960f4b890f0aebabe46535caa35"
+		},
+		"www/images/ui-bg_glass_95_fef1ec_1x400.png" : {
+			"checksum" : "d1ea4fa20cf86f36ed3737023b2d96a4"
+		},
+		"www/images/ui-bg_highlight-soft_75_cccccc_1x100.png" : {
+			"checksum" : "e0e3ef56eac2055ceefcc6c696d0f991"
+		},
+		"www/images/ui-bg_highlight-soft_75_dadada_1x100.png" : {
+			"checksum" : "2a3fb5fa5dd75b29c75a046c22f10e35"
+		},
+		"www/images/ui-icons_222222_256x240.png" : {
+			"checksum" : "a1b3887a86cf1791f23c0b53b4d3585f"
+		},
+		"www/images/ui-icons_2e83ff_256x240.png" : {
+			"checksum" : "764c37efbf6d7ffc176b466fadc6f2ca"
+		},
+		"www/images/ui-icons_454545_256x240.png" : {
+			"checksum" : "6b29e362591a05e270b33c4fc3f67cb2"
+		},
+		"www/images/ui-icons_888888_256x240.png" : {
+			"checksum" : "302ae7a7aed5730c16146b677b123638"
+		},
+		"www/images/ui-icons_cd0a0a_256x240.png" : {
+			"checksum" : "5c78585b80fbf4342d21674a04e89c8b"
+		},
+		"www/js/jquery-1.10.2.js" : {
+			"checksum" : "91515770ce8c55de23b306444d8ea998"
+		},
+		"www/js/jquery-ui-1.10.4.custom.js" : {
+			"checksum" : "3e0bd1e9add7f052216a3e6c4531b601"
+		},
+		"www/js/jquery-ui-1.10.4.custom.min.js" : {
+			"checksum" : "e7f43b58820979153c3e4a5660b3c6ac"
+		},
+		"www/js/scripts.js" : {
+			"checksum" : "dd8aa1a4ad11419f5497e6396c756b50"
+		}
+	},
+	"users" : null
+}
